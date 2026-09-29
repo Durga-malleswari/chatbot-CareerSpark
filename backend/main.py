@@ -234,7 +234,7 @@ User Question:
     try:
         chat = client.chat.completions.create(
             messages=messages,
-            model="llama-3.3-70b-versatile"
+            model="openai/gpt-oss-20b"
         )
         answer = chat.choices[0].message.content
         chat_memory[user_id].append({"role": "user", "content": query})
